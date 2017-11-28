@@ -1,0 +1,25 @@
+{
+  "name": "koa-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon -e ts  --exec \"npm run compile\"",
+    "compile": "tsc && node ./build/server.js"
+  },
+  "author": "Petar Petrov",
+  "license": "MIT",
+  "dependencies": {
+    "jsonwebtoken": "^8.1.0",
+    "koa": "^2.4.1",
+    "koa-body": "^2.5.0",
+    "koa-jwt": "^3.2.2",
+    "koa-router": "^7.3.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.41",
+    "@types/koa-jwt": "^3.2.2",
+    "@types/koa-router": "^7.0.26",
+    "nodemon": "^1.12.1"
+  }
+}
